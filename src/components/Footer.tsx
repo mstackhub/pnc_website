@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Phone, MessageCircle, Share2, Clock, MapPin, ShieldCheck } from "lucide-react";
+import { Phone, MessageCircle, Share2, Clock, MapPin, Calendar } from "lucide-react";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
@@ -151,7 +151,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               }}
               className="w-full h-11 rounded-xl bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold shadow transition flex items-center justify-center gap-2"
             >
-              <ShieldCheck className="w-4 h-4" />
+              <Calendar className="w-4 h-4" />
               <span>เปิดฟอร์มนัดหมายคิวออนไลน์</span>
             </button>
           </div>

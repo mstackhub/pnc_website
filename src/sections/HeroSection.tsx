@@ -12,6 +12,7 @@ import {
   BadgeCheck,
   ArrowRight,
   ShieldCheck,
+  Calendar,
 } from "lucide-react";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
@@ -83,7 +84,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                 onClick={handleLineClick}
                 className="h-13 px-7 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95"
               >
-                <Sparkles className="w-5 h-5" />
+                <Calendar className="w-5 h-5" />
                 <span>จองคิวผ่าน LINE</span>
               </button>
 

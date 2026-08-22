@@ -7,7 +7,7 @@ import {
   X,
   Phone,
   MessageCircle,
-  Sparkles,
+  Calendar,
   Home,
   ShieldCheck,
   ListOrdered,
@@ -129,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                 onClick={handleBookingClick}
                 className="h-11 px-5 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-sm shadow-md transition transform hover:-translate-y-0.5 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
               >
-                <Sparkles className="w-4 h-4" />
+                <Calendar className="w-4 h-4" />
                 <span>จองล้างรถ</span>
               </button>
             </div>
@@ -141,7 +141,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                 onClick={handleBookingClick}
                 className="h-9 px-3.5 rounded-xl bg-brand-primary text-white text-xs font-bold shadow transition flex items-center gap-1.5 active:scale-95"
               >
-                <Sparkles className="w-3.5 h-3.5" />
+                <Calendar className="w-3.5 h-3.5" />
                 <span>จองคิว</span>
               </button>
 
@@ -227,7 +227,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                 onClick={handleBookingClick}
                 className="w-full h-12 rounded-2xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-sm shadow-md flex items-center justify-center gap-2 active:scale-95 transition"
               >
-                <Sparkles className="w-4 h-4" />
+                <Calendar className="w-4 h-4" />
                 <span>จองล้างรถออนไลน์</span>
               </button>
 
