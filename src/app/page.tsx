@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { Footer } from "@/components/Footer";
 import { BookingModal } from "@/components/BookingModal";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 // Sections
 import { HeroSection } from "@/sections/HeroSection";
@@ -106,6 +107,9 @@ export default function HomePage() {
         initialVehicleType={bookingVehicle}
         initialService={bookingService}
       />
+
+      {/* 6. Scroll To Top Floating Button */}
+      <ScrollToTop />
     </>
   );
 }
