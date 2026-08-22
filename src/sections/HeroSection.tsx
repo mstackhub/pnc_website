@@ -82,7 +82,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               <button
                 type="button"
                 onClick={handleLineClick}
-                className="h-13 px-7 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95"
+                className="w-full sm:w-auto h-12 sm:h-[50px] px-7 rounded-2xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95"
               >
                 <Calendar className="w-5 h-5" />
                 <span>จองคิวผ่าน LINE</span>
@@ -92,9 +92,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
                 onClick={handlePhoneClick}
-                className="h-13 px-6 rounded-xl bg-white hover:bg-brand-light/60 border border-brand-border text-brand-text font-bold text-base shadow-sm transition flex items-center justify-center gap-2 hover:text-brand-primary active:scale-95"
+                className="w-full sm:w-auto h-12 sm:h-[50px] px-6 rounded-2xl bg-white hover:bg-brand-light/60 border border-brand-border text-brand-text font-bold text-base shadow-sm transition flex items-center justify-center gap-2.5 hover:text-brand-primary active:scale-95"
               >
-                <Phone className="w-4 h-4 text-brand-primary" />
+                <Phone className="w-5 h-5 text-brand-primary" />
                 <span>โทร {siteConfig.phone}</span>
               </a>
 

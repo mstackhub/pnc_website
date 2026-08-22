@@ -96,7 +96,7 @@ export const PainPointSection: React.FC<PainPointSectionProps> = ({ onOpenBookin
           <button
             type="button"
             onClick={handleCheckQueue}
-            className="h-13 px-8 rounded-2xl bg-white text-brand-primary font-bold text-base hover:bg-brand-light transition shadow-lg shrink-0 flex items-center gap-2 active:scale-95"
+            className="w-full sm:w-auto h-12 sm:h-[50px] px-8 rounded-2xl bg-white text-brand-primary font-bold text-base hover:bg-brand-light transition shadow-lg shrink-0 flex items-center justify-center gap-2 active:scale-95"
           >
             <span>เช็กคิวว่าง</span>
             <ArrowRight className="w-5 h-5" />

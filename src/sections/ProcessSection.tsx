@@ -122,7 +122,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
           <button
             type="button"
             onClick={handleInquire}
-            className="h-13 px-8 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2.5 active:scale-95"
+            className="w-full sm:w-auto h-12 sm:h-[50px] px-8 rounded-2xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2.5 active:scale-95"
           >
             <span>สอบถามบริการและจองคิว</span>
             <ArrowRight className="w-5 h-5" />

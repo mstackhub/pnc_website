@@ -362,7 +362,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full h-12 sm:h-13 bg-brand-primary hover:bg-brand-dark text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2 mt-2"
+                className="w-full h-12 sm:h-[50px] bg-brand-primary hover:bg-brand-dark text-white font-bold rounded-2xl shadow-lg transition flex items-center justify-center gap-2 mt-2"
               >
                 <span>ถัดไป: เลือกช่องทางส่งจองคิว</span>
                 <ArrowRight className="w-4 h-4" />

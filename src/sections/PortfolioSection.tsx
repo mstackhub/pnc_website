@@ -201,7 +201,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
           <button
             type="button"
             onClick={handleCtaClick}
-            className="h-13 px-8 rounded-xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2.5 active:scale-95"
+            className="w-full sm:w-auto h-12 sm:h-[50px] px-8 rounded-2xl bg-brand-primary hover:bg-brand-dark text-white font-bold text-base shadow-floating transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2.5 active:scale-95"
           >
             <span>อยากให้รถคุณเป็นคันต่อไป — จองคิวเลย</span>
             <ArrowRight className="w-5 h-5" />
