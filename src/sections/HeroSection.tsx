@@ -58,13 +58,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
             </h1>
 
             {/* Subheadline & Slogan */}
-            <div className="space-y-2 text-brand-muted text-base sm:text-lg leading-relaxed">
+            <div className="space-y-3 text-brand-muted text-base sm:text-lg leading-relaxed">
               <p>
                 สะดวก ไม่ต้องเสียเวลาขับรถไปคาร์แคร์ รองรับตั้งแต่มอเตอร์ไซค์ รถยนต์ รถ EV ไปจนถึงรถขนาดใหญ่ 6 ล้อ และ 10 ล้อ
               </p>
-              <p className="font-bold text-brand-dark flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-brand-primary shrink-0" />
-                <span>สโลแกน: “{siteConfig.slogan}”</span>
+              <p className="text-lg sm:text-xl font-extrabold text-brand-primary tracking-tight">
+                “{siteConfig.slogan}”
               </p>
             </div>
 
