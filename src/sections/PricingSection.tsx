@@ -61,13 +61,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenBooking })
         </div>
 
         {/* Category Pills */}
-        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-10">
+        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto px-1 pb-4 mb-10">
           {CATEGORIES.map((cat) => (
             <button
               key={cat.id}
               type="button"
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all shadow-sm ${
+              className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all shadow-sm shrink-0 ${
                 selectedCategory === cat.id
                   ? "bg-brand-primary text-white"
                   : "bg-brand-bg text-brand-muted hover:text-brand-text hover:bg-brand-light/60"

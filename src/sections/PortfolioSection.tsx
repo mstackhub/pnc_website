@@ -34,10 +34,10 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
   };
 
   return (
-    <section id="portfolio" className="py-20 sm:py-24 bg-white border-y border-brand-border/60">
+    <section id="portfolio" className="py-20 sm:py-24 bg-white border-y border-brand-border/60 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-light text-brand-primary text-xs font-bold">
             <Sparkles className="w-4 h-4" />
             <span>REAL WORK PORTFOLIO</span>
@@ -51,11 +51,11 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
         </div>
 
         {/* Portfolio Tabs (Before/After vs All Gallery) */}
-        <div className="flex items-center justify-center gap-2 mb-10">
+        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto px-1 pb-3 mb-8 sm:mb-10">
           <button
             type="button"
             onClick={() => setActiveTab("slider")}
-            className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-sm ${
+            className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all shadow-sm shrink-0 ${
               activeTab === "slider"
                 ? "bg-brand-primary text-white"
                 : "bg-brand-bg text-brand-muted hover:text-brand-text hover:bg-brand-light/60"
@@ -66,7 +66,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
           <button
             type="button"
             onClick={() => setActiveTab("gallery")}
-            className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-sm ${
+            className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all shadow-sm shrink-0 ${
               activeTab === "gallery"
                 ? "bg-brand-primary text-white"
                 : "bg-brand-bg text-brand-muted hover:text-brand-text hover:bg-brand-light/60"
@@ -80,13 +80,13 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
         {activeTab === "slider" && (
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Vehicle Selector Pills */}
-            <div className="flex items-center justify-center gap-2 overflow-x-auto pb-2">
+            <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto px-1 pb-3">
               {beforeAfterItems.map((item, idx) => (
                 <button
                   key={item.id}
                   type="button"
                   onClick={() => setSelectedBaIndex(idx)}
-                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all ${
+                  className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all shrink-0 ${
                     selectedBaIndex === idx
                       ? "bg-brand-dark text-white shadow-md"
                       : "bg-brand-bg text-brand-muted hover:text-brand-text hover:bg-brand-light"
@@ -110,7 +110,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
                     ผลงานจริง
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-brand-text">
+                  <h3 className="text-base sm:text-xl font-bold text-brand-text">
                     {currentBa.title}
                   </h3>
                 </div>
