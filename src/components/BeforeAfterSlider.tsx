@@ -77,7 +77,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     <div className={cn("flex flex-col gap-2", className)}>
       <div
         ref={containerRef}
-        className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden select-none cursor-ew-resize border border-brand-border shadow-card bg-neutral-900"
+        className="relative w-full aspect-[4/3] sm:aspect-[1024/819] max-h-[640px] rounded-2xl overflow-hidden select-none cursor-ew-resize border border-brand-border shadow-card bg-neutral-900 mx-auto"
         onMouseDown={(e) => {
           setIsDragging(true);
           handleMove(e.clientX);
@@ -93,9 +93,10 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
             src={afterImage}
             alt={altAfter}
             fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover"
-            priority={false}
+            quality={95}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+            className="object-cover sm:object-contain md:object-cover"
+            priority
           />
           {/* AFTER Label */}
           <div className="absolute bottom-4 right-4 z-10 bg-brand-primary/90 backdrop-blur-sm text-white text-xs sm:text-sm font-bold px-3 py-1 rounded-full shadow-md pointer-events-none">
@@ -112,9 +113,10 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
             src={beforeImage}
             alt={altBefore}
             fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover"
-            priority={false}
+            quality={95}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+            className="object-cover sm:object-contain md:object-cover"
+            priority
           />
           {/* BEFORE Label */}
           <div className="absolute bottom-4 left-4 z-10 bg-neutral-900/80 backdrop-blur-sm text-white text-xs sm:text-sm font-bold px-3 py-1 rounded-full shadow-md pointer-events-none">
@@ -124,12 +126,12 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
 
         {/* Slider Divider Line */}
         <div
-          className="absolute top-0 bottom-0 w-0.5 sm:w-1 bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)] z-20 pointer-events-none"
+          className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] z-20 pointer-events-none"
           style={{ left: `${sliderPosition}%` }}
         >
           {/* Slider Handle */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white text-brand-primary shadow-xl border-2 border-brand-primary flex items-center justify-center pointer-events-auto cursor-ew-resize">
-            <MoveHorizontal className="w-5 h-5" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white text-brand-primary shadow-2xl border-2 border-brand-primary flex items-center justify-center pointer-events-auto cursor-ew-resize hover:scale-110 active:scale-95 transition-transform">
+            <MoveHorizontal className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
         </div>
 
