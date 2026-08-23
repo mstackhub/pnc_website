@@ -86,25 +86,17 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             {/* Logo */}
             <Link
               href="#home"
-              className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary rounded-lg"
+              className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary rounded-xl"
             >
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white group-hover:scale-105 transition-transform">
+              <div className="relative h-12 w-12 sm:h-14 sm:w-14 rounded-2xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white group-hover:scale-105 transition-transform p-1">
                 <Image
                   src={siteConfig.logo}
                   alt={`${siteConfig.name} Logo`}
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-contain p-0.5"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-contain"
                   priority
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-brand-text leading-none">
-                  PNC <span className="text-brand-primary">AUTO GO</span>
-                </span>
-                <span className="text-[10px] text-brand-muted font-medium mt-0.5 tracking-wider">
-                  MOBILE CAR WASH & DETAILING
-                </span>
               </div>
             </Link>
 
@@ -180,22 +172,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           >
             {/* Drawer Top Header */}
             <div className="p-4 sm:p-5 border-b border-brand-border bg-brand-bg flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white">
+              <div className="flex items-center gap-3">
+                <div className="relative h-11 w-11 rounded-2xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white p-1">
                   <Image
                     src={siteConfig.logo}
                     alt={`${siteConfig.name} Logo`}
-                    width={36}
-                    height={36}
-                    className="w-full h-full object-contain p-0.5"
+                    width={44}
+                    height={44}
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-extrabold text-base text-brand-text leading-none">
-                    PNC <span className="text-brand-primary">AUTO GO</span>
-                  </span>
-                  <span className="text-[10px] text-brand-muted font-medium mt-0.5">
+                  <span className="font-extrabold text-base text-brand-text leading-tight">
                     เมนูการใช้งาน
+                  </span>
+                  <span className="text-[11px] text-brand-muted">
+                    PNC Auto GO
                   </span>
                 </div>
               </div>

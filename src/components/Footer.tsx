@@ -18,23 +18,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
           {/* Col 1: Brand & Slogan */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md flex items-center justify-center shrink-0 bg-white border border-white/20">
+            <div className="flex items-center">
+              <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-3xl overflow-hidden shadow-md flex items-center justify-center shrink-0 bg-white border border-white/20 p-2">
                 <Image
                   src={siteConfig.logo}
                   alt={`${siteConfig.name} Logo`}
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-contain p-0.5"
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-contain"
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-xl tracking-tight text-white leading-none">
-                  PNC <span className="text-emerald-400">AUTO GO</span>
-                </span>
-                <span className="text-[10px] text-white/60 font-medium mt-0.5 tracking-wider">
-                  MOBILE CAR WASH & DETAILING
-                </span>
               </div>
             </div>
 
