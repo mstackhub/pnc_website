@@ -38,6 +38,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.png"],
+  },
   openGraph: {
     title: "ล้างรถถึงบ้าน 24 ชม. รังสิต ปทุมธานี | PNC Auto GO",
     description:
