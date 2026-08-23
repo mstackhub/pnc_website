@@ -61,6 +61,16 @@ export interface PortfolioItem {
   isRealWork?: boolean;
   altBefore: string;
   altAfter: string;
+  location?: string;
+  date?: string;
+  timeSpent?: string;
+  servicesDone?: string[];
+  highlights?: string[];
+  gallery?: {
+    image: string;
+    title: string;
+    alt: string;
+  }[];
 }
 
 export interface GalleryPhoto {

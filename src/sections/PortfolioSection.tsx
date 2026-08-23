@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Sparkles, Maximize2, ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { Sparkles, Maximize2, ArrowRight, CheckCircle2, ChevronDown, Eye } from "lucide-react";
 import { beforeAfterItems, galleryPhotos } from "@/data/portfolio";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { Lightbox } from "@/components/Lightbox";
@@ -126,11 +127,20 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
                 altAfter={currentBa.altAfter}
               />
 
-              {currentBa.description && (
-                <p className="mt-4 text-xs sm:text-sm text-brand-muted bg-white p-3.5 rounded-2xl border border-brand-border/60">
-                  <strong>รายละเอียดงาน:</strong> {currentBa.description}
-                </p>
-              )}
+              <div className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-brand-border/60">
+                {currentBa.description && (
+                  <p className="text-xs sm:text-sm text-brand-muted flex-1">
+                    <strong>รายละเอียดงาน:</strong> {currentBa.description}
+                  </p>
+                )}
+                <Link
+                  href={`/portfolio/${currentBa.id}`}
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold transition shadow-sm shrink-0 active:scale-95"
+                >
+                  <Eye className="w-4 h-4" />
+                  <span>ดูอัลบั้มและรายละเอียดผลงานเต็ม ➔</span>
+                </Link>
+              </div>
             </div>
           </div>
         )}

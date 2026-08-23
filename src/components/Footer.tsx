@@ -9,7 +9,7 @@ import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
 interface FooterProps {
-  onOpenBooking: () => void;
+  onOpenBooking?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
@@ -143,7 +143,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               type="button"
               onClick={() => {
                 analytics.clickBooking("footer");
-                onOpenBooking();
+                if (onOpenBooking) {
+                  onOpenBooking();
+                } else {
+                  window.location.href = "/#pricing";
+                }
               }}
               className="w-full h-11 rounded-xl bg-brand-primary hover:bg-brand-dark text-white text-xs font-bold shadow transition flex items-center justify-center gap-2"
             >

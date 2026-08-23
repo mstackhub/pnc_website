@@ -23,7 +23,7 @@ import { analytics } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 interface HeaderProps {
-  onOpenBooking: (vehicleType?: string, service?: string) => void;
+  onOpenBooking?: (vehicleType?: string, service?: string) => void;
 }
 
 const NAV_LINKS = [
@@ -68,7 +68,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   const handleBookingClick = () => {
     analytics.clickBooking("header_nav_button");
     setMobileMenuOpen(false);
-    onOpenBooking();
+    if (onOpenBooking) {
+      onOpenBooking();
+    } else {
+      window.location.href = "/#pricing";
+    }
   };
 
   return (
