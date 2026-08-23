@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Menu,
   X,
@@ -87,8 +88,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
               href="#home"
               className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary rounded-lg"
             >
-              <div className="w-10 h-10 rounded-xl bg-brand-primary text-white flex items-center justify-center font-black text-lg shadow-md group-hover:bg-brand-dark transition-colors shrink-0">
-                PNC
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white group-hover:scale-105 transition-transform">
+                <Image
+                  src={siteConfig.logo}
+                  alt={`${siteConfig.name} Logo`}
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain p-0.5"
+                  priority
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight text-brand-text leading-none">
@@ -173,8 +181,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             {/* Drawer Top Header */}
             <div className="p-4 sm:p-5 border-b border-brand-border bg-brand-bg flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-brand-primary text-white flex items-center justify-center font-black text-base shadow">
-                  PNC
+                <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-sm flex items-center justify-center shrink-0 border border-brand-border/60 bg-white">
+                  <Image
+                    src={siteConfig.logo}
+                    alt={`${siteConfig.name} Logo`}
+                    width={36}
+                    height={36}
+                    className="w-full h-full object-contain p-0.5"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-extrabold text-base text-brand-text leading-none">

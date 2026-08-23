@@ -15,6 +15,7 @@ export const siteConfig = {
   baseLocation: "รังสิต / คลองหลวง 17",
   serviceRadiusFreeKm: 20,
   extraKmFeeRate: 5,
+  logo: "/images/logo/pnc_logo.png",
   isDemo: process.env.NEXT_PUBLIC_SITE_MODE === "staging" || process.env.NODE_ENV !== "production",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://pncautogo.vercel.app",
 };

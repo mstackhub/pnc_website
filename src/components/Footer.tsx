@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, Share2, Clock, MapPin, Calendar } from "lucide-react";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
@@ -18,8 +19,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           {/* Col 1: Brand & Slogan */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-brand-primary text-white flex items-center justify-center font-black text-lg shadow-md">
-                PNC
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md flex items-center justify-center shrink-0 bg-white border border-white/20">
+                <Image
+                  src={siteConfig.logo}
+                  alt={`${siteConfig.name} Logo`}
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain p-0.5"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl tracking-tight text-white leading-none">
