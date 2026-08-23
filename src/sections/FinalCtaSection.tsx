@@ -38,7 +38,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenBooking 
         </div>
 
         {/* Headline */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.2]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-white leading-[1.35] sm:leading-[1.4]">
           วันนี้คุณไม่จำเป็นต้องเสียเวลาไปล้างรถเอง
         </h2>
 

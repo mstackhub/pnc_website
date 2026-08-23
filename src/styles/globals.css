@@ -17,6 +17,11 @@ body {
   background-color: #F7F8F6;
   font-family: var(--font-ibm-plex-sans-thai);
   overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.35;
 }
 
 /* Custom Safe Area Utility for Mobile */
