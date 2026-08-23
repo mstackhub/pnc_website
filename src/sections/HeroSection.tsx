@@ -50,9 +50,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Main H1 Title */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-5xl font-extrabold text-brand-text leading-[1.65] sm:leading-[1.55]">
-              บริการล้างรถถึงบ้าน 24 ชั่วโมง{" "}
-              <span className="text-brand-primary underline decoration-brand-light decoration-4 underline-offset-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[48px] font-extrabold text-brand-text !leading-[1.75] tracking-normal">
+              <span className="inline-block">บริการล้างรถถึงบ้าน 24 ชั่วโมง</span>{" "}
+              <span className="inline-block text-brand-primary underline decoration-brand-light decoration-4 underline-offset-8 mt-1 sm:mt-2">
                 รังสิต–ปทุมธานี
               </span>
             </h1>
