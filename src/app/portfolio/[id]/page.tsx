@@ -23,6 +23,7 @@ import { Footer } from "@/components/Footer";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { LineIcon, MessengerIcon } from "@/components/BrandIcons";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { ProjectGallery } from "./ProjectGallery";
 
 interface PageProps {
   params: {
@@ -229,29 +230,11 @@ export default function ProjectDetailPage({ params }: PageProps) {
                   ภาพถ่ายรายละเอียดผลงาน ({project.gallery.length} ภาพ)
                 </h3>
                 <p className="text-xs sm:text-sm text-brand-muted mt-1">
-                  ภาพถ่ายผลงานจริงทุกมุมมองจากการดูแลของทีมงาน PNC Auto GO
+                  คลิกที่รูปภาพเพื่อเปิดดูขนาดเต็มความละเอียดสูง (Fullscreen Lightbox)
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {project.gallery.map((photo, index) => (
-                  <div
-                    key={index}
-                    className="group relative rounded-2xl overflow-hidden border border-brand-border bg-brand-bg aspect-[4/3] shadow-sm hover:shadow-md transition"
-                  >
-                    <Image
-                      src={photo.image}
-                      alt={photo.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                      <span className="text-white text-xs font-semibold">{photo.title}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <ProjectGallery gallery={project.gallery} />
             </div>
           )}
 
