@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Home, Clock, Sparkles, CheckSquare, ShieldCheck } from "lucide-react";
+import { Home, Clock, Car, CheckSquare, ShieldCheck } from "lucide-react";
 
 export const WhyUsSection: React.FC = () => {
   const features = [
@@ -18,7 +18,7 @@ export const WhyUsSection: React.FC = () => {
       badge: "ยืดหยุ่นสูง",
     },
     {
-      icon: Sparkles,
+      icon: Car,
       title: "รองรับรถหลากหลายประเภท",
       description: "ตั้งแต่มอเตอร์ไซค์ทั่วไป Big Bike รถเก๋ง SUV รถยนต์ไฟฟ้า EV ไปจนถึงรถ 6 ล้อ และ 10 ล้อ",
       badge: "ครบทุกยานพาหนะ",
