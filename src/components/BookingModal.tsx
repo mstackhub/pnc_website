@@ -9,13 +9,12 @@ import {
   Car,
   Sparkles,
   Phone,
-  MessageCircle,
-  Share2,
   Copy,
   Check,
   ArrowRight,
   ChevronLeft,
 } from "lucide-react";
+import { LineIcon, MessengerIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { generateLineMessage, getLineShareUrl } from "@/lib/lineGenerator";
 import { analytics } from "@/lib/analytics";
@@ -409,7 +408,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                      <MessageCircle className="w-5 h-5 fill-current" />
+                      <LineIcon className="w-6 h-6 fill-current" />
                     </div>
                     <div className="text-left">
                       <div className="text-sm sm:text-base font-bold">ส่งข้อความผ่าน LINE</div>
@@ -429,7 +428,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                      <Share2 className="w-5 h-5" />
+                      <MessengerIcon className="w-6 h-6 fill-current" />
                     </div>
                     <div className="text-left">
                       <div className="text-sm sm:text-base font-bold">ส่งผ่าน Facebook Messenger</div>

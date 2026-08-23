@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageCircle, Share2, Clock, MapPin, Calendar } from "lucide-react";
+import { Phone, Clock, MapPin, Calendar } from "lucide-react";
+import { LineIcon, FacebookIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
@@ -117,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-[#06C755]/20 text-white transition border border-white/10"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#06C755] flex items-center justify-center text-white shrink-0">
-                  <MessageCircle className="w-4 h-4 fill-current" />
+                  <LineIcon className="w-4 h-4 fill-current" />
                 </div>
                 <div>
                   <div className="text-xs text-white/60">LINE Official</div>
@@ -133,7 +134,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-[#1877F2]/20 text-white transition border border-white/10"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#1877F2] flex items-center justify-center text-white shrink-0">
-                  <Share2 className="w-4 h-4" />
+                  <FacebookIcon className="w-4 h-4 fill-current" />
                 </div>
                 <div>
                   <div className="text-xs text-white/60">Facebook Messenger</div>

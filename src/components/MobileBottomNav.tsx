@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
+import { Phone, CalendarCheck } from "lucide-react";
+import { LineIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
@@ -46,7 +47,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenBooking 
           className="col-span-4 h-12 rounded-xl bg-[#06C755] hover:bg-[#05b34c] text-white flex flex-col items-center justify-center text-[11px] font-bold active:scale-95 transition-all shadow-sm"
           aria-label="แอด LINE เพื่อจองคิวหรือสอบถาม"
         >
-          <MessageCircle className="w-4 h-4 fill-current mb-0.5" />
+          <LineIcon className="w-4 h-4 fill-current mb-0.5" />
           <span>LINE</span>
         </a>
 

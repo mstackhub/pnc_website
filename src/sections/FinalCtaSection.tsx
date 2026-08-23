@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { MessageCircle, Share2, Phone, Sparkles, Clock, MapPin, CheckCircle2 } from "lucide-react";
+import { Phone, Clock, MapPin, CheckCircle2, Sparkles } from "lucide-react";
+import { LineIcon, MessengerIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
@@ -76,7 +77,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenBooking 
             onClick={handleLineClick}
             className="w-full sm:w-auto flex-1 h-14 px-7 rounded-2xl bg-[#06C755] hover:bg-[#05b34c] text-white font-extrabold text-base shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95"
           >
-            <MessageCircle className="w-5 h-5 fill-current" />
+            <LineIcon className="w-6 h-6 fill-current" />
             <span>จองผ่าน LINE</span>
           </button>
 
@@ -84,9 +85,9 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenBooking 
           <button
             type="button"
             onClick={handleFacebookClick}
-            className="w-full sm:w-auto flex-1 h-14 px-6 rounded-2xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-base shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 active:scale-95"
+            className="w-full sm:w-auto flex-1 h-14 px-6 rounded-2xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-base shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 active:scale-95"
           >
-            <Share2 className="w-5 h-5" />
+            <MessengerIcon className="w-6 h-6 fill-current" />
             <span>Facebook Messenger</span>
           </button>
 

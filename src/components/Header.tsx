@@ -7,7 +7,6 @@ import {
   Menu,
   X,
   Phone,
-  MessageCircle,
   Calendar,
   Home,
   ShieldCheck,
@@ -18,6 +17,7 @@ import {
   HelpCircle,
   ChevronRight,
 } from "lucide-react";
+import { LineIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
@@ -249,7 +249,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                   }}
                   className="h-11 rounded-xl bg-[#06C755] hover:bg-[#05b34c] text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow active:scale-95 transition"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current" />
+                  <LineIcon className="w-4 h-4 fill-current" />
                   <span>แอด LINE</span>
                 </a>
 
