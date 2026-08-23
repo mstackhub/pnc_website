@@ -41,7 +41,7 @@ export const AboutSection: React.FC = () => {
               {/* Slogan Highlight Card */}
               <div className="p-5 rounded-2xl bg-gradient-to-r from-brand-light to-brand-bg border-2 border-brand-primary/30 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-brand-primary text-white flex items-center justify-center shrink-0 shadow-md">
-                  <Sparkles className="w-6 h-6" />
+                  <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="text-xs font-bold text-brand-primary uppercase tracking-wider">
