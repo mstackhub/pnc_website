@@ -104,8 +104,8 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
             </div>
 
             {/* Slider Component Card */}
-            <div className="bg-brand-bg p-4 sm:p-6 rounded-3xl border border-brand-border shadow-card">
-              <div className="flex items-center justify-between mb-4">
+            <div className="bg-white p-4 sm:p-6 rounded-3xl border border-brand-border shadow-card space-y-4">
+              <div className="flex items-center justify-between">
                 <div>
                   <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
@@ -127,7 +127,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBookin
                 altAfter={currentBa.altAfter}
               />
 
-              <div className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-brand-border/60">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-brand-bg p-4 rounded-2xl border border-brand-border/60">
                 {currentBa.description && (
                   <p className="text-xs sm:text-sm text-brand-muted flex-1">
                     <strong>รายละเอียดงาน:</strong> {currentBa.description}

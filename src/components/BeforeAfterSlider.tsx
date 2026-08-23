@@ -95,7 +95,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
             fill
             quality={95}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            className="object-cover sm:object-contain md:object-cover"
+            className="object-cover w-full h-full"
             priority
           />
           {/* AFTER Label */}
@@ -115,7 +115,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
             fill
             quality={95}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            className="object-cover sm:object-contain md:object-cover"
+            className="object-cover w-full h-full"
             priority
           />
           {/* BEFORE Label */}

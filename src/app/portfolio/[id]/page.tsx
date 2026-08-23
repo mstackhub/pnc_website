@@ -170,13 +170,12 @@ export default function ProjectDetailPage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-3 sm:p-5 border border-brand-border shadow-card">
+            <div className="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-card p-2 sm:p-3">
               <BeforeAfterSlider
                 beforeImage={project.beforeImage}
                 afterImage={project.afterImage}
                 altBefore={project.altBefore}
                 altAfter={project.altAfter}
-                title={project.title}
               />
             </div>
           </div>
