@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Clock, MapPin, Calendar } from "lucide-react";
-import { LineIcon, FacebookIcon } from "@/components/BrandIcons";
+import { LineIcon, MessengerIcon } from "@/components/BrandIcons";
 import { siteConfig } from "@/data/company";
 import { analytics } from "@/lib/analytics";
 
@@ -117,9 +117,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 onClick={() => analytics.clickLine("footer")}
                 className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-[#06C755]/20 text-white transition border border-white/10"
               >
-                <div className="w-8 h-8 rounded-lg bg-[#06C755] flex items-center justify-center text-white shrink-0">
-                  <LineIcon className="w-4 h-4 fill-current" />
-                </div>
+                <LineIcon className="w-8 h-8 rounded-full overflow-hidden shrink-0 shadow-sm" />
                 <div>
                   <div className="text-xs text-white/60">LINE Official</div>
                   <div className="text-sm font-bold">@pncautogo (แอดไลน์นัดคิว)</div>
@@ -133,9 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 onClick={() => analytics.clickFacebook("footer")}
                 className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-[#1877F2]/20 text-white transition border border-white/10"
               >
-                <div className="w-8 h-8 rounded-lg bg-[#1877F2] flex items-center justify-center text-white shrink-0">
-                  <FacebookIcon className="w-4 h-4 fill-current" />
-                </div>
+                <MessengerIcon className="w-8 h-8 rounded-full overflow-hidden shrink-0 shadow-sm" />
                 <div>
                   <div className="text-xs text-white/60">Facebook Messenger</div>
                   <div className="text-sm font-bold">PNC Auto GO</div>

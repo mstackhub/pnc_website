@@ -407,9 +407,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   className="w-full p-4 rounded-2xl bg-[#06C755] hover:bg-[#05b34c] text-white font-bold transition shadow-md flex items-center justify-between group"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                      <LineIcon className="w-6 h-6 fill-current" />
-                    </div>
+                    <LineIcon className="w-10 h-10 shadow-sm rounded-full" />
                     <div className="text-left">
                       <div className="text-sm sm:text-base font-bold">ส่งข้อความผ่าน LINE</div>
                       <div className="text-xs text-white/90 font-normal">
@@ -427,9 +425,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   className="w-full p-4 rounded-2xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold transition shadow-md flex items-center justify-between group"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                      <MessengerIcon className="w-6 h-6 fill-current" />
-                    </div>
+                    <MessengerIcon className="w-10 h-10 shadow-sm rounded-full" />
                     <div className="text-left">
                       <div className="text-sm sm:text-base font-bold">ส่งผ่าน Facebook Messenger</div>
                       <div className="text-xs text-white/90 font-normal">
